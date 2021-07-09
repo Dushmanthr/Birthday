@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #000066;
+    background: url(./img/brm.jpg); 
+}
+
+.balloon{
+           height: 60px;
+           width: 55px;
+           background-color: crimson;
+           position:absolute;
+           top: 40%;
+           left:10%;
+           border-radius: 50px;
+}
+
+.balloon:before{
+
+    /*content: "";*/
+    height: 30px;
+    width: 6px;
+    position: absolute;
+    background-color:black;
+    top: 90%;
+    
+    
+   
+
+}

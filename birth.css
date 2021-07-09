@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color:mediumspringgreen;
+    background: url(./img/bc.png); 
+}
+
+.balloon{
+           height: 60px;
+           width: 50px;
+           background-color: crimson;
+           position:absolute;
+           top: 40%;
+           left:10%;
+           border-radius: 50px;
+           animation: move 1s ease-in infinite;
+}
+
+.balloon:before{
+
+    content: "";
+    height: 60px;
+    width: 6px;
+    position: absolute;
+    background-color:white;
+    top: 93%;
+    left:40%;
+    
+    }
+    @keyframes move{
+        0%{
+            top:100%;
+        }
+        100%{
+            top:0%;
+        }
+    }
+
+.balloon:nth-child(2){
+    left:20%;
+    top:40%;
+    background-color: green;
+    animation-duration: 1500ms;
+}    
+
+.balloon:nth-child(3){
+    left:30%;
+    top:40%;
+    background-color: skyblue;
+    animation-duration: 2000ms;
+}    
+
+.balloon:nth-child(4){
+    left:40%;
+    top:40%;
+    background-color: fuchsia;
+    animation-duration: 2500ms;
+}    
+
+
+.balloon:nth-child(5){
+    left:50%;
+    top:40%;
+    background-color: crimson;
+    animation-duration: 3000ms;
+}    
+
+.balloon:nth-child(6){
+    left:60%;
+    top:40%;
+    background-color: pink;
+    animation-duration: 3500ms;
+    
+}    
+
+.balloon:nth-child(7){
+    left:70%;
+    top:40%;
+    background-color:yellow;
+    animation-duration: 4000ms;
+}    
+
+.balloon:nth-child(8){
+    left:80%;
+    top:40%;
+    background-color: green;
+    animation-duration: 4500ms;
+}    
+
+.balloon:nth-child(9){
+    left:90%;
+    top:40%;
+    background-color: crimson;
+    animation-duration: 5000ms;
+}
+
+/*.click button{
+    background-color: red;
+    margin-top:45%;
+    margin-left:50%;
+    width:70px;
+    height:40px;
+    
+}*/
+
+.present{
+    width:400px;
+    margin-left:45%;
+    margin-top: 34%;
+}
+
+.box,.lid{
+    background:
+     radial-gradient(white 15%, transparent 15.1%),
+     rgb(240,58,58);
+     background-position: 0 0,15px 15px;
+     background-size: 50px 50px;
+     position: relative;
+     /* margin: 0 auto; */
+     
+
+}
+.box{
+    width:205px;
+    height:100px;
+  
+   
+}
+
+.lid{
+    width:202px;
+    height:40px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+    z-index:1;
+    padding: 0 2px;
+    background-color: rgb(216,52,52);
+}
+
+.box span, .lid span{
+    position: absolute;
+    display:block;
+    background: rgba(235,199,0,0.8);
+    box-shadow:1px 2px 3px rgba(0,0,0,0.1);
+}
+
+.box span:first-child {
+    width:100%;
+    height:30px;
+    top:35px;
+}
+
+.box span:last-child .lid span{
+    width:60px;
+    height:100%;
+    left:0px;
+
+}
+
+.lid span {
+    left:2px;
+}
+
+ 
+.code{
+    color: blue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 3%;
+    position: relative;
+    top:5px;
+     height:0; 
+     transition: all ease-out 0.7s;  
+}
+
+.code p{
+    margin-left: 5%;
+    font-family:cursive;
+    margin-top:0;
+    font-size:18px;
+}
+
+.code h2{
+    font-size:24px;
+    margin:0;
+}
+
+.code button{
+    transition: all ease-out 1.5s;
+    margin-left:16%;
+    background:darkred;
+    cursor: pointer;
+
+    
+}
+.code h3{
+    color:lime;
+}
+
+.present:hover .lid{
+    top:-100px;
+    transform: rotatez(10deg);
+}
+
+.present:hover .code {
+    top: -80px;
+
+}
+
+
+
